@@ -4,14 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VD08
+namespace VD12_DatVeXemPhim
 {
-    class HOCVIEN
+    class KHACHHANG
     {
-        public int MaHV { get; set; }
         public string Ten { get; set; }
+        public string DiaChi { get; set; }
+        public DateTime NgayDat { get; set; }
         public Boolean LaSV { get; set; }
-        public string MaLH { get; set; }
+        public int SoLuong { get; set; }
+        public string LoaiVe { get; set; }
         public int ThanhTien { get; set; }
     }
 }
