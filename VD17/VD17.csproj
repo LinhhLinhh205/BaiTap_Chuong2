@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AA11A47B-F831-4E02-BA96-7CB5CD9CFC28}</ProjectGuid>
+    <ProjectGuid>{51F52E3F-E3E2-459F-A2E7-72800E8C12B8}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>VD16_TraSinhVien</RootNamespace>
-    <AssemblyName>VD16_TraSinhVien</AssemblyName>
+    <RootNamespace>VD17</RootNamespace>
+    <AssemblyName>VD17</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -52,10 +52,9 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="HOCVIEN.cs" />
-    <Compile Include="LOPHOC.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SINHVIEN.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

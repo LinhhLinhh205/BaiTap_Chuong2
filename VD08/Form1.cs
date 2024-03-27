@@ -154,5 +154,10 @@ namespace VD08
             comboBox1_SelectedIndexChanged(sender, e);
             
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
