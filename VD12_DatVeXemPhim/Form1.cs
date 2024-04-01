@@ -66,5 +66,10 @@ namespace VD12_DatVeXemPhim
             txtThanhTien.Text = ThanhTien.ToString("#,##0đ");
 
         }
+
+        private void dupLoaiVe_SelectedItemChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

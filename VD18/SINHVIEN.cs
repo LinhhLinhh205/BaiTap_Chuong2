@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VD17
+namespace VD18
 {
     class SINHVIEN
     {

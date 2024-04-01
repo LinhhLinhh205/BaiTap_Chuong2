@@ -31,22 +31,22 @@ namespace VD12_DatVeXemPhim
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtTen = new System.Windows.Forms.TextBox();
-            this.txtDC = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.dtpNgayDat = new System.Windows.Forms.DateTimePicker();
-            this.chkLaSV = new System.Windows.Forms.CheckBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.nudSoLuong = new System.Windows.Forms.NumericUpDown();
-            this.label6 = new System.Windows.Forms.Label();
-            this.dupLoaiVe = new System.Windows.Forms.DomainUpDown();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtThanhTien = new System.Windows.Forms.TextBox();
-            this.btnDat = new System.Windows.Forms.Button();
-            this.btnThoat = new System.Windows.Forms.Button();
             this.btnTiep = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
+            this.btnDat = new System.Windows.Forms.Button();
+            this.txtThanhTien = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.dupLoaiVe = new System.Windows.Forms.DomainUpDown();
+            this.label6 = new System.Windows.Forms.Label();
+            this.nudSoLuong = new System.Windows.Forms.NumericUpDown();
+            this.label4 = new System.Windows.Forms.Label();
+            this.chkLaSV = new System.Windows.Forms.CheckBox();
+            this.dtpNgayDat = new System.Windows.Forms.DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtDC = new System.Windows.Forms.TextBox();
+            this.txtTen = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudSoLuong)).BeginInit();
             this.SuspendLayout();
@@ -89,32 +89,124 @@ namespace VD12_DatVeXemPhim
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin đặt vé";
             // 
-            // txtTen
+            // btnTiep
             // 
-            this.txtTen.Location = new System.Drawing.Point(96, 24);
-            this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(325, 20);
-            this.txtTen.TabIndex = 0;
-            this.txtTen.Text = "Nguyễn Ngọc Linh";
+            this.btnTiep.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTiep.Location = new System.Drawing.Point(183, 204);
+            this.btnTiep.Name = "btnTiep";
+            this.btnTiep.Size = new System.Drawing.Size(87, 38);
+            this.btnTiep.TabIndex = 8;
+            this.btnTiep.Text = "Tiếp";
+            this.btnTiep.UseVisualStyleBackColor = true;
+            this.btnTiep.Click += new System.EventHandler(this.btnTiep_Click);
             // 
-            // txtDC
+            // btnThoat
             // 
-            this.txtDC.Location = new System.Drawing.Point(96, 50);
-            this.txtDC.Name = "txtDC";
-            this.txtDC.Size = new System.Drawing.Size(325, 20);
-            this.txtDC.TabIndex = 1;
-            this.txtDC.Text = "252 Lý Chính Thắng";
+            this.btnThoat.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.Location = new System.Drawing.Point(317, 204);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(87, 38);
+            this.btnThoat.TabIndex = 9;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // btnDat
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Blue;
-            this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label2.Location = new System.Drawing.Point(18, 28);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Tên khách";
+            this.btnDat.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDat.Location = new System.Drawing.Point(49, 204);
+            this.btnDat.Name = "btnDat";
+            this.btnDat.Size = new System.Drawing.Size(87, 38);
+            this.btnDat.TabIndex = 7;
+            this.btnDat.Text = "Đặt vé";
+            this.btnDat.UseVisualStyleBackColor = true;
+            this.btnDat.Click += new System.EventHandler(this.btnDat_Click);
+            // 
+            // txtThanhTien
+            // 
+            this.txtThanhTien.Location = new System.Drawing.Point(96, 160);
+            this.txtThanhTien.Name = "txtThanhTien";
+            this.txtThanhTien.Size = new System.Drawing.Size(325, 20);
+            this.txtThanhTien.TabIndex = 6;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.Blue;
+            this.label7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label7.Location = new System.Drawing.Point(18, 164);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(58, 13);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Thành tiền";
+            // 
+            // dupLoaiVe
+            // 
+            this.dupLoaiVe.Location = new System.Drawing.Point(317, 125);
+            this.dupLoaiVe.Name = "dupLoaiVe";
+            this.dupLoaiVe.Size = new System.Drawing.Size(104, 20);
+            this.dupLoaiVe.TabIndex = 5;
+            this.dupLoaiVe.Text = "domainUpDown1";
+            this.dupLoaiVe.SelectedItemChanged += new System.EventHandler(this.dupLoaiVe_SelectedItemChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.Blue;
+            this.label6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label6.Location = new System.Drawing.Point(247, 129);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(42, 13);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Loại vé";
+            // 
+            // nudSoLuong
+            // 
+            this.nudSoLuong.Location = new System.Drawing.Point(96, 125);
+            this.nudSoLuong.Name = "nudSoLuong";
+            this.nudSoLuong.Size = new System.Drawing.Size(118, 20);
+            this.nudSoLuong.TabIndex = 4;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.Blue;
+            this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label4.Location = new System.Drawing.Point(18, 129);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 13);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Số lượng vé";
+            // 
+            // chkLaSV
+            // 
+            this.chkLaSV.AutoSize = true;
+            this.chkLaSV.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.chkLaSV.Location = new System.Drawing.Point(250, 87);
+            this.chkLaSV.Name = "chkLaSV";
+            this.chkLaSV.Size = new System.Drawing.Size(83, 17);
+            this.chkLaSV.TabIndex = 3;
+            this.chkLaSV.Text = "Là sinh viên";
+            this.chkLaSV.UseVisualStyleBackColor = true;
+            // 
+            // dtpNgayDat
+            // 
+            this.dtpNgayDat.CustomFormat = "dd/MM/yyyy";
+            this.dtpNgayDat.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNgayDat.Location = new System.Drawing.Point(96, 85);
+            this.dtpNgayDat.Name = "dtpNgayDat";
+            this.dtpNgayDat.Size = new System.Drawing.Size(103, 20);
+            this.dtpNgayDat.TabIndex = 2;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.Blue;
+            this.label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label5.Location = new System.Drawing.Point(18, 89);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(51, 13);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Ngày đặt";
             // 
             // label3
             // 
@@ -128,123 +220,32 @@ namespace VD12_DatVeXemPhim
             this.label3.Text = "Địa chỉ";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // label5
+            // label2
             // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.Color.Blue;
-            this.label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label5.Location = new System.Drawing.Point(18, 89);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 13);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Ngày đặt";
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Blue;
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label2.Location = new System.Drawing.Point(18, 28);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(59, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Tên khách";
             // 
-            // dtpNgayDat
+            // txtDC
             // 
-            this.dtpNgayDat.CustomFormat = "dd/MM/yyyy";
-            this.dtpNgayDat.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpNgayDat.Location = new System.Drawing.Point(96, 85);
-            this.dtpNgayDat.Name = "dtpNgayDat";
-            this.dtpNgayDat.Size = new System.Drawing.Size(103, 20);
-            this.dtpNgayDat.TabIndex = 2;
+            this.txtDC.Location = new System.Drawing.Point(96, 50);
+            this.txtDC.Name = "txtDC";
+            this.txtDC.Size = new System.Drawing.Size(325, 20);
+            this.txtDC.TabIndex = 1;
+            this.txtDC.Text = "252 Lý Chính Thắng";
             // 
-            // chkLaSV
+            // txtTen
             // 
-            this.chkLaSV.AutoSize = true;
-            this.chkLaSV.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.chkLaSV.Location = new System.Drawing.Point(250, 87);
-            this.chkLaSV.Name = "chkLaSV";
-            this.chkLaSV.Size = new System.Drawing.Size(83, 17);
-            this.chkLaSV.TabIndex = 3;
-            this.chkLaSV.Text = "Là sinh viên";
-            this.chkLaSV.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.Blue;
-            this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label4.Location = new System.Drawing.Point(18, 129);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Số lượng vé";
-            // 
-            // nudSoLuong
-            // 
-            this.nudSoLuong.Location = new System.Drawing.Point(96, 125);
-            this.nudSoLuong.Name = "nudSoLuong";
-            this.nudSoLuong.Size = new System.Drawing.Size(118, 20);
-            this.nudSoLuong.TabIndex = 4;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.Blue;
-            this.label6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label6.Location = new System.Drawing.Point(247, 129);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(42, 13);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Loại vé";
-            // 
-            // dupLoaiVe
-            // 
-            this.dupLoaiVe.Location = new System.Drawing.Point(317, 125);
-            this.dupLoaiVe.Name = "dupLoaiVe";
-            this.dupLoaiVe.Size = new System.Drawing.Size(104, 20);
-            this.dupLoaiVe.TabIndex = 5;
-            this.dupLoaiVe.Text = "domainUpDown1";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.Color.Blue;
-            this.label7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label7.Location = new System.Drawing.Point(18, 164);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(58, 13);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "Thành tiền";
-            // 
-            // txtThanhTien
-            // 
-            this.txtThanhTien.Location = new System.Drawing.Point(96, 160);
-            this.txtThanhTien.Name = "txtThanhTien";
-            this.txtThanhTien.Size = new System.Drawing.Size(325, 20);
-            this.txtThanhTien.TabIndex = 6;
-            // 
-            // btnDat
-            // 
-            this.btnDat.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDat.Location = new System.Drawing.Point(49, 204);
-            this.btnDat.Name = "btnDat";
-            this.btnDat.Size = new System.Drawing.Size(87, 38);
-            this.btnDat.TabIndex = 7;
-            this.btnDat.Text = "Đặt vé";
-            this.btnDat.UseVisualStyleBackColor = true;
-            this.btnDat.Click += new System.EventHandler(this.btnDat_Click);
-            // 
-            // btnThoat
-            // 
-            this.btnThoat.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(317, 204);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(87, 38);
-            this.btnThoat.TabIndex = 9;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = true;
-            // 
-            // btnTiep
-            // 
-            this.btnTiep.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTiep.Location = new System.Drawing.Point(183, 204);
-            this.btnTiep.Name = "btnTiep";
-            this.btnTiep.Size = new System.Drawing.Size(87, 38);
-            this.btnTiep.TabIndex = 8;
-            this.btnTiep.Text = "Tiếp";
-            this.btnTiep.UseVisualStyleBackColor = true;
-            this.btnTiep.Click += new System.EventHandler(this.btnTiep_Click);
+            this.txtTen.Location = new System.Drawing.Point(96, 24);
+            this.txtTen.Name = "txtTen";
+            this.txtTen.Size = new System.Drawing.Size(325, 20);
+            this.txtTen.TabIndex = 0;
+            this.txtTen.Text = "Nguyễn Ngọc Linh";
             // 
             // Form1
             // 
